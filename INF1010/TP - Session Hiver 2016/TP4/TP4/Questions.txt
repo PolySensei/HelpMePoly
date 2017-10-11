@@ -1,0 +1,34 @@
+1.
+La seule classe abstraite est ObjetNumerique.
+La classe ObjetNumerique devient une classe abstraite puisque toutes ces méthodes sont des méthodes virtuelles pures.
+Nous l'avons définit ainsi puisqu'il n'existe pas d'objet ObjetNumerique en soi. En effet, ce sont les livres 
+numériques qui existent. La classe ObjetNumerique ne sert donc qu'à définir certaines des méthodes qui seront implémentées 
+dans la classe fille (LivreNumerique). 
+
+
+2.
+ObjetEmpruntable: 
+La méthode recherche() a été définie virtuelle puisque cette méthode est utilisée différemment dans les classes dérivées. 
+Ainsi, par la substitution, le polymorphisme va se charger d’utiliser la méthode approprié selon le type d'objet.
+Toutefois, cette méthode n’est pas virtuelle pure puisque nous l’avons implémenté dans le fichier ObjetEmpruntable.cpp 
+afin d’éviter de dédoubler le code dans les classes dérivés. Ainsi, il suffit d’utiliser l’opérateur de portée 
+(ObjetEmpruntable::recherche()) et d’ajouter les lignes de codes désirées lors de l’implémentation de cette méthode dans 
+les classes dérivés.
+Nous avons aussi définit le destructeur comme virtuel.
+
+ObjetNumerique: 
+Toutes les méthodes de cette classe ont été définies virtuelles pures (obtenirTaille(), obtenirLienInternet(), 
+modifierTaille(), modifierLien()) puisque cette classe est abstraite. De cette manière nous obligeons la classe fille 
+LivreNumérique à redéfinir ces méthodes. Celles-ci sont virtuelles pures puisqu'aucune implémentation n'a été faite dans 
+la classe (aucun fichier .cpp) et nous avons ajouté = 0 ; à la fin des méthodes en plus du terme virtual.
+
+
+3. 
+Pour utiliser correctement l’opérateur << selon le type de l’objet.
+Comme notre code contient des surcharges pour l’opérateur <<, il faut lui spécifié le bon type d’objet à afficher.
+Par exemple, comme un Étudiant est un Abonné, il faut s'assurer que << affiche un étudiant comme un étudiant et non un abonné.
+Ainsi, nous utilisons les dynamic_cast pour convertir le pointeur d’une classe de base en pointeur d’une sous-classe. 
+(Exemple : convertir un Abonné en Professeur, Etudiant ou EtudiantBaccalaureat). Nous devons procéder ainsi puisque la 
+fonction pour surcharger l’opérateur<< est une fonction externe à la classe, nous ne pouvons donc pas utiliser le 
+polymorphisme et la définir comme une méthode virtuelle comme pour d’autre méthode lors du TP.
+

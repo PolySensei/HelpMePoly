@@ -1,0 +1,37 @@
+1. 
+Attribut public: 
+	Les attributs publics ont une visibilité totale à l’intérieur et à l’extérieur de la classe. 
+	Autrement dit, un attribut public peut être utilisé aussi bien dans l’implémentation des méthodes d’une classe que dans le programme principale, 
+	le main() par exemple. De plus les attributs publics sont toujours transmis et accessible par les classes enfants en cas d'héritage.
+
+Attribut private: 
+	Les attributs private sont visibles uniquement à l’intérieur de la classe. C’est-à-dire qu’ils ne peuvent être utilisés directement que dans la classe où celui-ci
+	a été déclaré. Une manière d’accéder aux attributs «private» est de créer une méthode d’accès public dans la classe. 
+	Dans les cas d’héritage, les attributs privés d'une classe mère ne sont donc pas accessible via une classe fille.
+
+Attribut protected: Le niveau d’accès protégé correspond à une extension du niveau privé permettant l’accès aux sous-classes. 
+	Autrement dit, les attributs protégés d'une classe de base sont accessibles en cas d'héritage via les sous-classes.
+
+Or, les attributs private et protected sont toutefois accessible en utilisant «friend» sur une fonction globale.
+
+
+
+2. Le problème est qu’Albus n’est pas affiché comme un Professeur, mais comme un Abonné.
+
+	Ce problème s’explique par le fait que lorsque qu’un abonné est ajouter à la bibliothèque, il est ajouté dans un vecteur ne prenant que des pointeurs d’abonné (vector<Abonne*>). 
+	Ainsi, dès qu’il est utilisé/recherché dans ce vecteur. Il en ressort en tant que abonné et perd son statut particulier de la classe enfant.
+
+	De plus, la fonction infoAbonne() qui prend en paramètre un string correspondant au matricule, fait ensuite appelle à la fonction trouveAbonne(matricule) qui retourne un
+	pointeur d’Abonné. Ainsi, Albus est perçu comme un Abonne et non pas un Professeur. Par la suite, lorsque la fonction infoAbonne() fait appel à l’opérateur <<. L’affichage 
+	se fait comme un Abonné.
+
+	Un moyen de contourner ce problème serait d’utiliser le polymorphisme et des méthodes virtuelles.
+
+
+
+3. Le problème est que la limite d’emprunt de l’étudiant est affichée à 4 au lieu de 8. 
+
+	Ce problème s’explique par le fait qu’il n’y a aucune surcharge sur l’opérateur << ayant comme paramètre un objet de type EtudiantBaccalaureat. 
+	Ainsi, lorsque l’opérateur << est appeler dans le programme principal (cout << tony;), tony est considéré seulement comme Étudiant et non comme un EtudiantBaccalaureat.
+
+	Une solution serait de surcharger l’opérateur << afin de pouvoir prendre un objet de type EtudiantBaccalaureat en paramètre.
