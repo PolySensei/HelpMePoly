@@ -1,0 +1,16 @@
+1.
+La classe AttaqueMagique est abstraite puisque nous avons déclaré la méthode appliquerAttaque() virtuelle pure.
+Nous déclarons la classe AttaqueMagique abstraite puisqu'il n'existe pas d'objet de type AttaqueMagique en soi.
+Seulement des objets AttaqueMagiquePoison et AttaqueMagiqueConfusion existe. AttaqueMagique sert donc à définir 
+certaines méthodes qui seront par la suite définies ou redéfinies dans les classes filles.
+
+2.
+Nous avons implémenté nos fonctions obtenirTypeCreature() à l'aide du pointeur this et de sa méthode name() au lieu
+de simplement retourner un string qui indique le type de la créature. Ceci nous évite donc d'avoir à redéfinir la méthode
+dans la classe CréatureMagique. par contre, si nous avions utilisé l'autre manière de procéder, la méthode obtenirTypeCreature()
+aurait dû être déclarée virtuelle.
+
+3. 
+Pou éviter les problèmes, une bonne habitude à prendre est de déclarer nos destructeurs dans les classes
+utilisant le polymorphisme comme étant virtuels. Ceci permet d'appeller le bon destructeur lorsqu'on delete un objet. Sinon,
+par exemple, on pourrait tenter de détruire une Creaturemagique mais c'est plutôt le destructeur de Creature qui sera appellé!

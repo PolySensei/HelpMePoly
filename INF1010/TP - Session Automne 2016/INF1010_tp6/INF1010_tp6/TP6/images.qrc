@@ -1,0 +1,19 @@
+<RCC>
+    <qresource prefix="/">
+        <file>images/dresseuse.png</file>
+        <file>images/pict_sprites-dresseurs-pokemon-rubis-omega-saphir-alpha_16416_5_.png</file>
+        <file>images/pikachu_fight.png</file>
+        <file>images/Pikachu-PNG-HD.png</file>
+        <file>images/balbazar.png</file>
+        <file>images/carapouce.png</file>
+        <file>images/salameche.png</file>
+        <file>images/sasha.png</file>
+        <file>images/Team_Rocket_trio_XY.png</file>
+        <file>images/fleche_bas.png</file>
+        <file>images/fleche_droite.png</file>
+        <file>images/fleche_gauche.png</file>
+        <file>images/fleche_haut.png</file>
+        <file>images/Nintondo.png</file>
+        <file>images/pokamon_logo.png</file>
+    </qresource>
+</RCC>
