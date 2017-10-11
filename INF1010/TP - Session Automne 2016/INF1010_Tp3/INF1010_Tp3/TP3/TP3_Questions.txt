@@ -1,0 +1,19 @@
+1. 
+
+Cela depend si le cout de la classe de base ou d'une des classes filles est appellé. Si l'état est considérée comme 
+un ÉtatCréature, la durée n'est pas affiché dans le cout. Par contre, si l'objet est considéré comme une classe fille (ÉtatEmpoisonné par exemple),
+le cout affiche la durée puisque l'opérateur << a été surchargé dans les classes filles.
+
+2. 
+
+Le constructeur de la classe mère sera appellé avant celui de la classe professeur. L'ordre d'appel
+sera donc le constructeur par paramètres de Dresseur suivi du constructeur par paramètres de Professeur
+
+3. 
+ 
+	m=f 			----> Invalide
+	f=m 			----> Valide
+	mPointeur=&f		----> Invalide
+	fPointeur=&m		----> Valide
+	fonctionSurMere(f)	----> Invalide
+	fonctionSurFille(m)	----> Valide

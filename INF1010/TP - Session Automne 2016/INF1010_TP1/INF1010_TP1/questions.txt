@@ -1,0 +1,20 @@
+Questions:
+
+1.
+La relation entre les dresseurs et Polyland est de type aggrégation. La classe Dresseur est
+utilisée comme un tableau de pointeur dans la classe Polyland. C'est de l'aggrégation puisqu'une relation faible existe entre
+les deux classes. En effet, si Polyland disparaît, les dresseurs ne disparaissent pas.
+
+2.
+La relation entre les creatures et Polyland est de type aggrégation. La classe Creature est
+utilisée comme un tableau de pointeur dans la classe Polyland. C'est de l'aggrégation puisqu'une relation faible existe entre
+les deux classes. En effet, si Polyland disparaît, les dresseurs ne disparaissent pas.
+
+3.
+La relation entre les dresseurs et les créatures est de type aggrégation. La classe Creature est
+utilisée comme un tableau de pointeur dans la classe Dresseur. C'est de l'aggrégation puisqu'une relation faible existe entre
+les deux classes. En effet, si le dresseur disparaît, les creatures ne disparaissent pas.
+
+4.
+La relation entre les creatures et les pouvoirs est de type composition. C'est de la composition puisqu'une relation forte 
+existe entre les classes. Si la creature disparait, le pouvoir disparait aussi.

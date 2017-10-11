@@ -1,0 +1,13 @@
+1. Quelle est l’utilité de l’opérateur = et du constructeur par copie? 
+	L'opérateur = est pratique quand on veut modifier les attributs d'un objets en les attributs d'un autre objet déjà crée.
+	Le constructeur par copie est util lorsqu'on veut crée un deuxième objet identique a un objet déjà identique (pour modifier l'objet tout en gardant une copie intacte par exemple).
+
+2. Dans quel cas est-il absolument nécessaire de les implémenter?
+	Il n'est jamais absolument nécessaire de les implémenter mais leur utilisation peut rendre l'écriture et la lisibilité du programme beaucoup plus simple.
+
+3. Qu’est-ce qui différencie l’opérateur = du constructeur par copie?
+	L'opérateur = affecte les caractéristiques d'un objet existant à un autre objet existant. Il faut donc que les deux objets soit déjà créés pour parler d'affectation. Il ne peut donc pas 
+	avoir d'affectation avant qu'une copie ait été faite préalablement.
+
+	Le constructeur par copie, quant à lui, crée un nouvel objet ayant les mêmes propriétés que l'objet entré
+	en paramètre. C'est donc une opération qui peut rapidement devenir coûteuse puisqu'une copie de l'objet est crée.
