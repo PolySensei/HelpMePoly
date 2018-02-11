@@ -12,3 +12,6 @@ INF2610
 LOG2990
 LOG3430
 MEC1210
+
+
+EDIT: Sorry Guys, I'll be busy until march but I'll add those classes as soon as possible
