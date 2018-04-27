@@ -28,3 +28,5 @@ INF8480
 LOG4420
 LOG8430
 LOG8470
+
+Thanks everyone for the stars and don't forget to follow if you want to know when new classes are added. Don't forget you can send anything deemed useful to the email above and help people out.
