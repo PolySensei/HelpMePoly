@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?><project name="Untitled Gantt Project" company="" webLink="http://" view-date="2018-03-03" view-index="0" gantt-divider-location="490" resource-divider-location="300" version="2.8.6" locale="fr_CA">
+    <description/>
+    <view zooming-state="default:0" id="gantt-chart">
+        <field id="tpd3" name="Nom" width="346" order="0"/>
+        <field id="tpd4" name="Date de début" width="68" order="1"/>
+        <field id="tpd5" name="Date de fin" width="57" order="2"/>
+    </view>
+    <view id="resource-table">
+        <field id="0" name="Nom" width="210" order="0"/>
+        <field id="1" name="Rôle par défaut" width="86" order="1"/>
+    </view>
+    <!-- -->
+    <calendars>
+        <day-types>
+            <day-type id="0"/>
+            <day-type id="1"/>
+            <default-week id="1" name="default" sun="1" mon="0" tue="0" wed="0" thu="0" fri="0" sat="1"/>
+            <only-show-weekends value="false"/>
+            <overriden-day-types/>
+            <days/>
+        </day-types>
+    </calendars>
+    <tasks empty-milestones="true">
+        <taskproperties>
+            <taskproperty id="tpd0" name="type" type="default" valuetype="icon"/>
+            <taskproperty id="tpd1" name="priority" type="default" valuetype="icon"/>
+            <taskproperty id="tpd2" name="info" type="default" valuetype="icon"/>
+            <taskproperty id="tpd3" name="name" type="default" valuetype="text"/>
+            <taskproperty id="tpd4" name="begindate" type="default" valuetype="date"/>
+            <taskproperty id="tpd5" name="enddate" type="default" valuetype="date"/>
+            <taskproperty id="tpd6" name="duration" type="default" valuetype="int"/>
+            <taskproperty id="tpd7" name="completion" type="default" valuetype="int"/>
+            <taskproperty id="tpd8" name="coordinator" type="default" valuetype="text"/>
+            <taskproperty id="tpd9" name="predecessorsr" type="default" valuetype="text"/>
+        </taskproperties>
+        <task id="101" name="Brainstorming" meeting="false" start="2018-02-19" duration="3" complete="0" expand="true">
+            <task id="1" name="Determine Sources for Requirements" color="#8cb6ce" meeting="false" start="2018-02-19" duration="1" complete="0" thirdDate="2018-02-19" thirdDate-constraint="1" expand="true">
+                <depend id="3" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="2" name="Gather Information" color="#8cb6ce" meeting="false" start="2018-02-19" duration="1" complete="0" thirdDate="2018-02-20" thirdDate-constraint="0" expand="true">
+                <depend id="3" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="3" name="Conduct Requirements Workshops" color="#8cb6ce" meeting="false" start="2018-02-20" duration="1" complete="0" thirdDate="2018-02-20" thirdDate-constraint="0" expand="true">
+                <depend id="102" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="102" name="Evaluate Results" meeting="false" start="2018-02-21" duration="1" complete="0" expand="true">
+                <depend id="4" type="2" difference="0" hardness="Strong"/>
+            </task>
+        </task>
+        <task id="115" name="First Prototype iteration" meeting="false" start="2018-02-22" duration="3" complete="0" expand="true">
+            <task id="4" name="Prototype requirements" color="#8cb6ce" meeting="false" start="2018-02-22" duration="2" complete="0" thirdDate="2018-02-22" thirdDate-constraint="0" expand="true">
+                <depend id="5" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="5" name="Evaluate prototype" color="#8cb6ce" meeting="false" start="2018-02-26" duration="1" complete="0" thirdDate="2018-02-20" thirdDate-constraint="0" expand="true">
+                <depend id="103" type="2" difference="0" hardness="Strong"/>
+            </task>
+        </task>
+        <task id="116" name="Second Prototype iteration" meeting="false" start="2018-02-27" duration="2" complete="0" expand="true">
+            <task id="103" name="Prototype requirements" meeting="false" start="2018-02-27" duration="1" complete="0" expand="true">
+                <depend id="104" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="104" name="Evaluate prototype" meeting="false" start="2018-02-28" duration="1" complete="0" expand="true">
+                <depend id="7" type="2" difference="0" hardness="Strong"/>
+            </task>
+        </task>
+        <task id="7" name="Extract more precise requirements" color="#8cb6ce" meeting="false" start="2018-03-01" duration="2" complete="0" thirdDate="2018-03-02" thirdDate-constraint="0" expand="true"/>
+        <task id="8" name="Prioritise requirements" color="#8cb6ce" meeting="false" start="2018-03-01" duration="2" complete="0" thirdDate="2018-03-02" thirdDate-constraint="0" expand="true">
+            <depend id="21" type="2" difference="0" hardness="Strong"/>
+            <depend id="22" type="2" difference="0" hardness="Strong"/>
+            <depend id="23" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="9" name="Implement requirements" meeting="false" start="2018-03-05" duration="4" complete="0" expand="true">
+            <task id="21" name="Implement Operations" color="#8cb6ce" meeting="false" start="2018-03-05" duration="2" complete="0" thirdDate="2018-03-08" thirdDate-constraint="0" expand="true"/>
+            <task id="22" name="Implement States" color="#8cb6ce" meeting="false" start="2018-03-05" duration="2" complete="0" thirdDate="2018-03-08" thirdDate-constraint="0" expand="true"/>
+            <task id="23" name="Use Delegation to Reuse Implementation" color="#8cb6ce" meeting="false" start="2018-03-05" duration="2" complete="0" thirdDate="2018-03-09" thirdDate-constraint="0" expand="true"/>
+            <task id="24" name="Implement Associations" color="#8cb6ce" meeting="false" start="2018-03-05" duration="2" complete="0" thirdDate="2018-03-06" thirdDate-constraint="0" expand="true">
+                <depend id="25" type="2" difference="0" hardness="Strong"/>
+                <depend id="26" type="2" difference="0" hardness="Strong"/>
+                <depend id="27" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="25" name="Implement Attributes" color="#8cb6ce" meeting="false" start="2018-03-07" duration="2" complete="0" thirdDate="2018-03-09" thirdDate-constraint="0" expand="true">
+                <depend id="28" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="26" name="Provide Feedback to Design" color="#8cb6ce" meeting="false" start="2018-03-07" duration="2" complete="0" thirdDate="2018-03-07" thirdDate-constraint="0" expand="true">
+                <depend id="28" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="27" name="Evaluate the Code" color="#8cb6ce" meeting="false" start="2018-03-07" duration="2" complete="0" thirdDate="2018-03-07" thirdDate-constraint="0" expand="true">
+                <depend id="28" type="2" difference="0" hardness="Strong"/>
+            </task>
+        </task>
+        <task id="10" name="Implement unit tests" meeting="false" start="2018-03-09" duration="2" complete="0" expand="true">
+            <task id="28" name="Implement and Unit Test Drivers / Stubs" color="#8cb6ce" meeting="false" start="2018-03-09" duration="1" complete="0" thirdDate="2018-03-08" thirdDate-constraint="0" expand="true"/>
+            <task id="29" name="Implement and Unit Test Interface to Automated Test Tool(s)" color="#8cb6ce" meeting="false" start="2018-03-09" duration="2" complete="0" thirdDate="2018-03-07" thirdDate-constraint="0" expand="true">
+                <depend id="37" type="2" difference="0" hardness="Strong"/>
+                <depend id="38" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="30" name="Implement and Unit Test Test Procedure Behavior" color="#8cb6ce" meeting="false" start="2018-03-12" duration="1" complete="0" thirdDate="2018-03-08" thirdDate-constraint="0" expand="true">
+                <depend id="37" type="2" difference="0" hardness="Strong"/>
+                <depend id="38" type="2" difference="0" hardness="Strong"/>
+            </task>
+        </task>
+        <task id="11" name="Execute tests and fix bugs" meeting="false" start="2018-03-13" duration="2" complete="0" expand="true">
+            <task id="37" name="Execute Test Procedures" color="#8cb6ce" meeting="false" start="2018-03-13" duration="1" complete="0" thirdDate="2018-03-13" thirdDate-constraint="0" expand="true">
+                <depend id="39" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="38" name="Evaluate Execution of Test" color="#8cb6ce" meeting="false" start="2018-03-13" duration="1" complete="0" thirdDate="2018-03-14" thirdDate-constraint="0" expand="true">
+                <depend id="39" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="39" name="Verify Test Results" color="#8cb6ce" meeting="false" start="2018-03-14" duration="1" complete="0" thirdDate="2018-03-12" thirdDate-constraint="0" expand="true"/>
+            <task id="40" name="Recover From Halted Tests" color="#8cb6ce" meeting="false" start="2018-03-13" duration="1" complete="0" thirdDate="2018-03-12" thirdDate-constraint="0" expand="true">
+                <depend id="12" type="2" difference="0" hardness="Strong"/>
+            </task>
+        </task>
+        <task id="12" name="Refactor code" color="#8cb6ce" meeting="false" start="2018-03-14" duration="2" complete="0" thirdDate="2018-05-16" thirdDate-constraint="0" expand="true"/>
+        <task id="13" name="Extract architecture" meeting="false" start="2018-03-14" duration="2" complete="0" expand="true">
+            <task id="41" name="Develop Architecture Overview" color="#8cb6ce" meeting="false" start="2018-03-14" duration="2" complete="0" thirdDate="2018-03-13" thirdDate-constraint="0" expand="true">
+                <depend id="117" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="43" name="Survey Available Assets" color="#8cb6ce" meeting="false" start="2018-03-15" duration="1" complete="0" thirdDate="2018-03-14" thirdDate-constraint="0" expand="true">
+                <depend id="117" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="44" name="Identify Key Abstraction" color="#8cb6ce" meeting="false" start="2018-03-14" duration="1" complete="0" thirdDate="2018-03-15" thirdDate-constraint="0" expand="true">
+                <depend id="46" type="2" difference="0" hardness="Strong"/>
+                <depend id="47" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="45" name="Identify Analysis Mechanisms" color="#8cb6ce" meeting="false" start="2018-03-14" duration="1" complete="0" thirdDate="2018-03-15" thirdDate-constraint="0" expand="true">
+                <depend id="46" type="2" difference="0" hardness="Strong"/>
+                <depend id="47" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="46" name="Create Use-Case Realizations" color="#8cb6ce" meeting="false" start="2018-03-15" duration="1" complete="0" thirdDate="2018-02-20" thirdDate-constraint="0" expand="true"/>
+            <task id="47" name="Identify Stereotypical Interactions" color="#8cb6ce" meeting="false" start="2018-03-15" duration="1" complete="0" thirdDate="2018-02-20" thirdDate-constraint="0" expand="true">
+                <depend id="117" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="48" name="Review the Results" color="#8cb6ce" meeting="false" start="2018-03-15" duration="1" complete="0" thirdDate="2018-03-16" thirdDate-constraint="0" expand="true">
+                <depend id="117" type="2" difference="0" hardness="Strong"/>
+            </task>
+        </task>
+        <task id="117" name="Update requirements" color="#8cb6ce" meeting="false" start="2018-03-16" duration="1" complete="0" thirdDate="2018-03-19" thirdDate-constraint="0" expand="true"/>
+        <task id="15" name="Integrate code" meeting="false" start="2018-03-19" duration="2" complete="0" expand="false">
+            <task id="16" name="Accept Subsystems and Produce Intermediate Builds" color="#8cb6ce" meeting="false" start="2018-03-19" duration="1" complete="0" thirdDate="2018-03-21" thirdDate-constraint="0" expand="true">
+                <depend id="17" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="17" name="Promote Baselines" color="#8cb6ce" meeting="false" start="2018-03-20" duration="1" complete="0" thirdDate="2018-02-20" thirdDate-constraint="0" expand="true"/>
+        </task>
+        <task id="18" name="Update requirements" meeting="false" start="2018-02-20" duration="1" complete="0" expand="true"/>
+        <task id="19" name="Plan tests" meeting="false" start="2018-02-20" duration="1" complete="0" expand="true">
+            <task id="51" name="Identify Requirements for Test" meeting="false" start="2018-02-20" duration="1" complete="0" expand="true"/>
+            <task id="52" name="Assess Risk" meeting="false" start="2018-02-20" duration="1" complete="0" expand="true"/>
+            <task id="53" name="Develop Test Strategy" meeting="false" start="2018-02-20" duration="1" complete="0" expand="true"/>
+            <task id="54" name="Identify Resources" meeting="false" start="2018-02-20" duration="1" complete="0" expand="true"/>
+            <task id="55" name="Create Schedule" meeting="false" start="2018-02-20" duration="1" complete="0" expand="true"/>
+            <task id="56" name="Generate Test Plan" meeting="false" start="2018-02-20" duration="1" complete="0" expand="true"/>
+        </task>
+        <task id="20" name="Redact test cases" meeting="false" start="2018-02-20" duration="1" complete="0" expand="true"/>
+        <task id="58" name="Redact evaluation criterias" meeting="false" start="2018-02-20" duration="1" complete="0" expand="true"/>
+        <task id="59" name="Exectute software tests" meeting="false" start="2018-02-20" duration="1" complete="0" expand="true">
+            <task id="60" name="Execute Test Procedures" meeting="false" start="2018-02-20" duration="1" complete="0" expand="true"/>
+            <task id="61" name="Evaluate Execution of Test" meeting="false" start="2018-02-20" duration="1" complete="0" expand="true"/>
+            <task id="62" name="Verify Test Results" meeting="false" start="2018-02-20" duration="1" complete="0" expand="true"/>
+            <task id="63" name="Recover From Halted Tests" meeting="false" start="2018-02-20" duration="1" complete="0" expand="true"/>
+        </task>
+        <task id="67" name="Evaluate the software" meeting="false" start="2018-02-20" duration="1" complete="0" expand="true"/>
+    </tasks>
+    <resources/>
+    <allocations/>
+    <vacations/>
+    <previous/>
+    <roles roleset-name="Default"/>
+</project>
