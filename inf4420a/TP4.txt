@@ -1,0 +1,7 @@
+This TP is weird.
+
+Flag 1: You,re supposed to use johntheripper. pwned account password is pwned2 iirc.
+Flag 2: Log on windows machine with same password. Watif or the countdowna nd select bottom option.
+
+You,re supposed to show hidden files and modify the batch file on the C: drive for flag 3 but I didn't succeed. You can use the SAM password 
+erasure from  from a previous TP if you want to cheat your way to flag 3.
