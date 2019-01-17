@@ -20,6 +20,7 @@ LOG8470
 Classes I'm doing in winter (last semester !!):
 LOG8970
 LOG8371
-2 optional classes I gotta pick we'll see
+INF8808
+INF8430
 
 Thanks everyone for the stars and don't forget to follow if you want to know when new classes are added. Don't forget you can send anything deemed useful to the email above and help people out.
