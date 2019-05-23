@@ -7,20 +7,7 @@ More stuff will be added to this repo through the semesters and hopefully, at on
 ONCE AGAIN, PLEASE CONTRIBUTE TO THIS REPO IF IT'S BEEN OF ANY HELP TO YOU IF YOU WANT TO HAVE IT UPDATED IN THE FUTURE.
 
 
-EDIT: Added Autumn 2018 stuff. Mostly TPs but exams for LOG8470 are also there.
+EDIT: Finished my degree. I hope this has been helpful and thanks a lot to people that shared their work to me. I will leave this repo here do not worry and will try to keep it updated if you send me stuff in the future. Good luck at Poly ! 
 
-Here are the new classes:
-INF4420A
-INF8480
-LOG4420
-LOG8430
-LOG8470
-
-
-Classes I'm doing in winter (last semester !!):
-LOG8970
-LOG8371
-INF8808
-INF8430
 
 Thanks everyone for the stars and don't forget to follow if you want to know when new classes are added. Don't forget you can send anything deemed useful to the email above and help people out.
